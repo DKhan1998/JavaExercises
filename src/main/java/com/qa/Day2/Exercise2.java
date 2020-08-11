@@ -4,7 +4,6 @@ public class Exercise2 {
 
     public static void main(String[] args) {
         flowchart(467, 6, false);
-
     }
 
     public static void flowchart(int numberOne, int numberTwo, boolean result){
