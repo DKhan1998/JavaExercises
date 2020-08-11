@@ -8,7 +8,7 @@ public class Exercise2 {
 
     public static void flowchart(int numberOne, int numberTwo, boolean result){
 
-        // Exercise1 of  the flowchart section.
+        // Exercise 1 of  the flowchart section.
         int ResultNumber;
 
         if(result){
