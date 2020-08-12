@@ -8,6 +8,7 @@ public class Iteration {
         exercise3();
         exercise5();
         numbersPrinted();
+        exercise6("Hello World");
     }
 
     // loop from 100 to 199
@@ -188,10 +189,23 @@ public class Iteration {
      * String manipulation exercises
      *
      */
-    public static void exercise6(String[] args){
+    public static void exercise6(String args){
         System.out.println(" ");
-        System.out.println("String MAnipulation exercise :");
-        int tmp = args.length;
+        System.out.println("String Manipulation exercise :");
+        int tmp = args.length();
         System.out.println("Length of string : " + tmp);
+
+        System.out.println("String printed vertically : ");
+        for(int i = 0; i < args.length(); i++)
+        {
+            System.out.println(args.charAt(i));
+        }
+
+        System.out.println("String printed vertically : ");
+        for(int i = 0; i < args.length(); i++)
+        {
+
+            System.out.println(args.charAt(i));
+        }
     }
 }
