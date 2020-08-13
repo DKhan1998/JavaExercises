@@ -1,4 +1,4 @@
-package com.qa.Day4;
+package com.qa.day4;
 
 public class Peer_Programming {
 

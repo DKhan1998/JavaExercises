@@ -1,4 +1,4 @@
-package com.qa.Day2;
+package com.qa.day2;
 
 public class Exercise1 {
 
@@ -14,20 +14,23 @@ public class Exercise1 {
 
     }
 
-    public static void addition(int[] number){
-
-        int result = number[0] + number[1];
+    public static Integer addition(int[] number){
+        int result = number[0] * number[1];
         System.out.println(result);
+        return number[0] + number[1];
     }
 
-    public static void multiplication(int[] numbers){
+    public static Integer multiplication(int[] numbers){
 
         int result = numbers[0] * numbers[1];
         System.out.println(result);
+        return result;
     }
 
-    public static void division(double[] numbers){
+    public static Double division(double[] numbers){
 
-        System.out.println(numbers[0] / numbers[1]);
+        double result = numbers[0] / numbers[1];
+        System.out.println(result);
+        return result;
     }
 }

@@ -1,4 +1,4 @@
-package com.qa.Day3;
+package com.qa.day3;
 
 public class Iteration {
 

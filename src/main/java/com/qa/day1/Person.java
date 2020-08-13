@@ -1,4 +1,4 @@
-package com.qa.Day1.model;
+package com.qa.day1;
 
 public class Person {
 

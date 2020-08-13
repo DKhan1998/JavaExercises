@@ -1,4 +1,4 @@
-package com.qa.Day2;
+package com.qa.day2;
 
 public class Exercise2 {
 
