@@ -4,7 +4,7 @@ public class Peer_Programming {
 
     public static void main(String[] args) {
         int[] weightTemp = {70, 120, 70};
-
+        int[] inputNumbers = {3, 5, 15};
         // reverse factorials
         factorials();
         // checking doggy position and skipping it
@@ -12,7 +12,7 @@ public class Peer_Programming {
         // Goldilocks available seats
         goldilocks(weightTemp);
         // Calculation method
-        calculation();
+        calculation(inputNumbers);
     }
 
     public static void factorials() {
@@ -36,9 +36,9 @@ public class Peer_Programming {
         // goldilocks 0 = weight
         // goldilocks 1 = Max TEmp
         // Multi dimensional array for the weight of goldilocks and temp of porridge
-        int[] maxWeightTable = {90, 110, 113, 191, 129, 163, 193, 153, 107, 137, 40, 127, 146, 197, 59, 124, 59, 54, 119, 121, 189, 108, 21, 18, 90, 52, 129, 181, 123, 132};
-        int[] tempTable = {297, 66, 257, 276, 280, 163, 193, 153, 107, 137, 40, 127, 146, 197, 59, 124, 59, 54, 119, 121, 189, 108, 21, 18, 90, 52, 129, 181, 123, 132};
-        int[] luminosityTable = {78, 98, 12, 22, 12, 45, 65, 71, 87, 98, 45, 98, 10, 100, 12, 54, 98, 87, 32, 65, 97, 64, 31, 54, 65, 87, 98, 65, 21};
+        int[] maxWeightTable = {297, 66, 257, 276, 280, 163, 193, 153, 107, 137, 40, 127, 146, 197, 59, 124, 59, 54, 119, 121, 189, 108, 21, 18, 90, 52, 129, 181, 123, 132};
+        int[] tempTable = {90, 110, 113, 191, 129, 163, 193, 153, 107, 137, 40, 127, 146, 197, 59, 124, 59, 54, 119, 121, 189, 108, 21, 18, 90, 52, 129, 181, 123, 132};
+        int[] luminosityTable = {54, 78, 98, 12, 22, 12, 45, 65, 71, 87, 98, 45, 98, 10, 100, 12, 54, 98, 87, 32, 65, 97, 64, 31, 54, 65, 87, 98, 65, 21};
 
         // increments a table number
         int tableNumber = 0;
@@ -67,7 +67,37 @@ public class Peer_Programming {
         System.out.println("Number of available seats : " + avlTables.length);
     }
 
-    private static void calculation() {
+    private static void calculation(int[] userNumber){
 
+        char[] operators= {'+', '-', '/', '*'};
+        int correctResult;
+        String[] correlations = new String[3];
+
+        for (char operator : operators) {
+            switch (operator) {
+                case '+':
+                    // code to figure out
+                    for (int k = 0; k < userNumber.length; k++){
+                        correctResult = userNumber[k] + userNumber[k+1];
+                        if(correctResult == userNumber[k]){
+                            correlations[0] = Integer.toString(correctResult = userNumber[k] + userNumber[k+1]);
+                        }
+                    }
+                    break;
+                case '-':
+                    // more to figure out
+                    break;
+                case '/':
+                    //more code to figure out
+                    break;
+                case '*':
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + operator);
+            }
+        }
+        for(int k = 0; k < correlations.length; k++){
+            System.out.println("Correct correlations are : " + correlations[k]);
+        }
     }
 }
