@@ -39,25 +39,4 @@ public class Challenge1 {
         System.out.println("The decoded message = " + cipheredText);
         System.out.println("The new coded message = " + decodedText);
     }
-
-
-    /*
-     *
-     *  Challenge 2
-     *
-     */
-    /**public static void brokenKeyboard(){
-        try {
-            File myObj = new File("enable1.txt");
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                System.out.println(data);
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
-    }*/
 }

@@ -7,6 +7,7 @@ import static com.qa.day2.Exercise1.multiplication;
 import static org.junit.Assert.assertEquals;
 import static com.qa.day2.Exercise1.division;
 import static com.qa.day2.Exercise1.addition;
+import static com.qa.day2.Exercise2.flowchart;
 
 public class day2test {
 
@@ -14,6 +15,9 @@ public class day2test {
     public static int[] NumberTwo = {7, 3};
     public static double[] NumberThree = {6, 9};
 
+    /*
+        Exercise 1 Testing
+     */
     @Test
     public void multiplicationTest(){
         assertEquals((int) multiplication(NumberOne), 2691);
@@ -27,5 +31,13 @@ public class day2test {
     @Test
     public void additionTest(){
         assertEquals((int) addition(NumberTwo), 10);
+    }
+
+    /*
+        Exercise 2 Testing
+     */
+    @Test
+    public void flowchartTesting(){
+
     }
 }
