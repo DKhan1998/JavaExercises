@@ -2,7 +2,7 @@ package com.qa.day1;
 
 public class Person {
 
-    String fName, lName;
+    private String fName, lName;
 
     public Person(String fName, String lName) {
         this.fName = fName;
