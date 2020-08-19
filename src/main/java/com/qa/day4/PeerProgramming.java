@@ -1,14 +1,12 @@
 package com.qa.day4;
 
-public class Peer_Programming {
+public class PeerProgramming {
 
     public static void main(String[] args) {
         int[] weightTemp = {70, 120, 70};
         int[] inputNumbers = {3, 5, 15};
         // reverse factorials
         factorials();
-        // checking doggy position and skipping it
-        doggyPosition();
         // Goldilocks available seats
         goldilocks(weightTemp);
         // Calculation method
@@ -27,9 +25,6 @@ public class Peer_Programming {
         }
         System.out.println("Factorial of "+ i);
         System.out.println(" ");
-    }
-
-    private static void doggyPosition() {
     }
 
     public static void goldilocks(int[] goldilocks){
